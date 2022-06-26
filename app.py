@@ -50,7 +50,7 @@ def color_survived(val):
     return f'background-color: {color}'
 
 td_data = pd.read_csv('ctm-logs.csv')
-rgn_data = pd.read_excel('regions.csv')
+rgn_data = pd.read_csv('regions.csv')
 
  
 logs_data1 = pd.merge(td_data, rgn_data, on='job_name', how ='left')
