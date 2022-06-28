@@ -56,6 +56,8 @@ rgn_data = pd.read_csv('regions.csv')
 logs_data1 = pd.merge(td_data, rgn_data, on='job_name', how ='left')
 logs_data = logs_data1.replace(np.nan, '',regex=True)
 
+logs_data['orderDate'] = logs_data['orderDate'].astype(str).str[4:6] + "-" + logs_data['orderDate'].astype(str).str[2:4] + '-20' + logs_data['orderDate'].astype(str).str[:2]
+
 image = Image.open('Delllogo2.png')
 st.sidebar.image(image)
 st.sidebar.header('Order Jobs Status')
