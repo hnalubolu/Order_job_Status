@@ -1,6 +1,7 @@
 from secrets import choice
 import streamlit as st
 from PIL import Image
+from datetime import datetime, timedelta
 import pandas as pd
 import numpy as np
 import streamlit.components.v1 as components
@@ -56,7 +57,8 @@ rgn_data = pd.read_csv('regions.csv')
 logs_data1 = pd.merge(td_data, rgn_data, on='job_name', how ='left')
 logs_data = logs_data1.replace(np.nan, '',regex=True)
 
-logs_data['orderDate'] = logs_data['orderDate'].astype(str).str[4:6] + "-" + logs_data['orderDate'].astype(str).str[2:4] + '-20' + logs_data['orderDate'].astype(str).str[:2]
+logs_data['orderDate'] = pd.to_datetime(logs_data['orderDate'], format='%y%m%d')
+logs_data['orderDate'] = logs_data['orderDate'].dt.strftime('%d-%b-%Y')
 
 image = Image.open('Delllogo2.png')
 st.sidebar.image(image)
