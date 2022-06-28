@@ -273,24 +273,35 @@ def main():
             """
             )
       
-    if bt_amer:
-        amer_lst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']].where(logs_data.region=='AMER')
-        amer_lst = amer_lst1.dropna(subset=['job_name'])
-        st.write(amer_lst.style.applymap(color_survived, subset=["status"]))
-    elif bt_apj:
-        apj_lst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']].where(logs_data.region=='APJ')
-        apj_lst = apj_lst1.dropna(subset=['job_name'])
-        st.write(apj_lst.style.applymap(color_survived, subset=["status"]))
+    srch = st.sidebar.text_input('Job Name',max_chars=100)
 
-    elif bt_emea:
-        emea_lst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']].where(logs_data.region=='EMEA')
-        emea_lst = emea_lst1.dropna(subset=['job_name'])
-        st.write(emea_lst.style.applymap(color_survived, subset=["status"]))
-    else: 
-        global_lst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']]
-        global_lst = global_lst1.dropna(subset=['job_name'])
-        st.write(global_lst.style.applymap(color_survived, subset=["status"]))
+    if srch != "":
 
+        srch = srch.upper()
+
+        srch_lst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']].where(logs_data['job_name'].str.contains(srch))
+        srch_lst = srch_lst1.dropna(subset=['job_name'])
+        st.write(srch_lst.style.applymap(color_survived, subset=["status"]))
+
+    else:
+        
+        if bt_amer:
+            amer_lst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']].where(logs_data.region=='AMER')
+            amer_lst = amer_lst1.dropna(subset=['job_name'])
+            st.write(amer_lst.style.applymap(color_survived, subset=["status"]))
+        elif bt_apj:
+            apj_lst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']].where(logs_data.region=='APJ')
+            apj_lst = apj_lst1.dropna(subset=['job_name'])
+            st.write(apj_lst.style.applymap(color_survived, subset=["status"]))
+
+        elif bt_emea:
+            emea_lst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']].where(logs_data.region=='EMEA')
+            emea_lst = emea_lst1.dropna(subset=['job_name'])
+            st.write(emea_lst.style.applymap(color_survived, subset=["status"]))
+        else: 
+            global_lst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']]
+            global_lst = global_lst1.dropna(subset=['job_name'])
+            st.write(global_lst.style.applymap(color_survived, subset=["status"]))
 
 
 
