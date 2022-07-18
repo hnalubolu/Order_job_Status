@@ -1,13 +1,18 @@
+from secrets import choice
 import streamlit as st
-import streamlit.components.v1 as components
+from PIL import Image
+from datetime import datetime, timedelta
 import pandas as pd
 import numpy as np
+import streamlit.components.v1 as components
 import matplotlib.pyplot as plt
 import plotly.express as px
 import seaborn as sns
 
 
 st.set_page_config(layout="wide")
+
+
 
 st.markdown(
         """
@@ -39,147 +44,280 @@ st.markdown(
         unsafe_allow_html=True,
     )
 
+
+
 def color_survived(val):
-    color = 'red' if val=="Ended Not OK" else 'yellow' if val in ("Wait User", "Wait Condition") else 'lightblue' if val == 'Executing' else 'green'
+    color = 'red' if val=="Ended Not OK" else 'pink' if val in ("Wait User", "Wait Condition") else 'lightblue' if val == 'Executing' else 'green'
     return f'background-color: {color}'
 
+td_data = pd.read_csv('ctm-logs.csv')
+rgn_data = pd.read_csv('regions.csv')
 
-td_data = pd.read_csv(r'\\auspwdsapp01.aus.amer.dell.com\aus_hana_offline$\controlM_logs\ctm-logs.csv')
-rgn_data = pd.read_excel('Jobs_Rgn.xlsx')
+ 
+logs_data1 = pd.merge(td_data, rgn_data, on='job_name', how ='left')
+logs_data = logs_data1.replace(np.nan, '',regex=True)
 
+logs_data['orderDate'] = pd.to_datetime(logs_data['orderDate'], format='%y%m%d')
+logs_data['orderDate'] = logs_data['orderDate'].dt.strftime('%d-%b-%Y')
 
-logs_data = pd.merge(td_data, rgn_data, on='job_name', how ='left')
+image = Image.open('Delllogo2.png')
+st.sidebar.image(image)
+st.sidebar.header('Order Jobs Status')
 
-with st.sidebar:
+ord_dates = sorted(list(set(logs_data['orderDate'])), reverse=True)
+choice = st.sidebar.selectbox("Order Date", ord_dates)
 
-        ord_dates = sorted(list(set(logs_data['orderDate'])), reverse=True)
-        choice = st.sidebar.selectbox("Order Date", ord_dates)
-
-        logs_data = logs_data[logs_data['orderDate']==choice]
-
-        bt_global = st.button('Global')
-        bt_amer = st.button('AMER')
-        bt_apj = st.button('APJ')
-        bt_emea = st.button('EMEA')
-
-        df_endedok = len(logs_data[logs_data['status']=='Ended OK'])
-        df_endednotok = len(logs_data[logs_data['status']=='Ended Not OK'])
-        df_wait = len(logs_data[logs_data['status'].str.contains('Wait')])
-
-
-        amer_jobs = len(logs_data[logs_data['region']=='AMER'])
-        apj_jobs = len(logs_data[logs_data['region']=='APJ'])
-        emea_jobs = len(logs_data[logs_data['region']=='EMEA'])
-
-
-        amer_succ = len(logs_data[(logs_data["region"]=="AMER") & (logs_data["status"]=="Ended OK")])
-        amer_exec = len(logs_data[(logs_data["region"]=="AMER") & (logs_data["status"]=="Executing")])
-        amer_fail = len(logs_data[(logs_data["region"]=="AMER") & (logs_data["status"]=="Ended Not OK")])
-        amer_wait = len(logs_data[(logs_data["region"]=="AMER") & (logs_data["status"].str.contains('Wait'))])
-
-        apj_succ = len(logs_data[(logs_data["region"]=="APJ") & (logs_data["status"]=="Ended OK")])
-        apj_exec = len(logs_data[(logs_data["region"]=="APJ") & (logs_data["status"]=="Executing")])
-        apj_fail = len(logs_data[(logs_data["region"]=="APJ") & (logs_data["status"]=="Ended Not OK")])
-        apj_wait = len(logs_data[(logs_data["region"]=="APJ") & (logs_data["status"].str.contains('Wait'))])
-
-        emea_succ = len(logs_data[(logs_data["region"]=="EMEA") & (logs_data["status"]=="Ended OK")])
-        emea_exec = len(logs_data[(logs_data["region"]=="EMEA") & (logs_data["status"]=="Executing")])
-        emea_fail = len(logs_data[(logs_data["region"]=="EMEA") & (logs_data["status"]=="Ended Not OK")])
-        emea_wait = len(logs_data[(logs_data["region"]=="EMEA") & (logs_data["status"].str.contains('Wait'))])
-
-
-        amer_succ_pct = int(amer_succ/amer_jobs*100)
-        apj_succ_pct = int(apj_succ/apj_jobs*100)
-        emea_succ_pct = int(emea_succ/emea_jobs*100)
-
-        if amer_fail > 0:
-            amer_status = "PROBLEM"
-        elif amer_exec > 0:
-            amer_status = "Executing"
-        elif amer_jobs == amer_succ:
-            amer_status = "COMPLETED"
-        else:
-            amer_status = "WAITING"
-
-
-        if apj_fail > 0:
-            apj_status = "PROBLEM"
-        elif apj_exec > 0:
-            apj_status = "EXECUTING"
-        elif apj_jobs == apj_succ:
-            apj_status = "COMPLETED"
-        else:
-            apj_status = "WAITING"
-
-        if emea_fail > 0:
-            emea_status = "PROBLEM"
-        elif emea_exec > 0:
-            emea_status = "Executing"
-        elif emea_jobs == apj_succ:
-            emea_status = "COMPLETED"
-        else:
-            emea_status = "WAITING"
+logs_data = logs_data[logs_data['orderDate']==choice]
 
 
 
+df_endedok = len(logs_data[logs_data['status']=='Ended OK'])
+df_endednotok = len(logs_data[logs_data['status']=='Ended Not OK'])
+df_wait = len(logs_data[logs_data['status'].str.contains('Wait')])
 
+
+amer_jobs = len(logs_data[logs_data['region']=='AMER'])
+apj_jobs = len(logs_data[logs_data['region']=='APJ'])
+emea_jobs = len(logs_data[logs_data['region']=='EMEA'])
+
+
+amer_succ = len(logs_data[(logs_data["region"]=="AMER") & (logs_data["status"]=="Ended OK")])
+amer_exec = len(logs_data[(logs_data["region"]=="AMER") & (logs_data["status"]=="Executing")])
+amer_fail = len(logs_data[(logs_data["region"]=="AMER") & (logs_data["status"]=="Ended Not OK")])
+amer_wait = len(logs_data[(logs_data["region"]=="AMER") & (logs_data["status"].str.contains('Wait'))])
+
+apj_succ = len(logs_data[(logs_data["region"]=="APJ") & (logs_data["status"]=="Ended OK")])
+apj_exec = len(logs_data[(logs_data["region"]=="APJ") & (logs_data["status"]=="Executing")])
+apj_fail = len(logs_data[(logs_data["region"]=="APJ") & (logs_data["status"]=="Ended Not OK")])
+apj_wait = len(logs_data[(logs_data["region"]=="APJ") & (logs_data["status"].str.contains('Wait'))])
+
+emea_succ = len(logs_data[(logs_data["region"]=="EMEA") & (logs_data["status"]=="Ended OK")])
+emea_exec = len(logs_data[(logs_data["region"]=="EMEA") & (logs_data["status"]=="Executing")])
+emea_fail = len(logs_data[(logs_data["region"]=="EMEA") & (logs_data["status"]=="Ended Not OK")])
+emea_wait = len(logs_data[(logs_data["region"]=="EMEA") & (logs_data["status"].str.contains('Wait'))])
+
+
+amer_succ_pct = int(amer_succ/amer_jobs*100)
+apj_succ_pct = int(apj_succ/apj_jobs*100)
+emea_succ_pct = int(emea_succ/emea_jobs*100)
+
+if amer_fail > 0:
+    amer_status = "PROBLEM"
+elif amer_exec > 0:
+    amer_status = "EXECUTING"
+elif amer_jobs == amer_succ:
+    amer_status = "COMPLETED"
+else:
+    amer_status = "WAITING"
+
+
+if apj_fail > 0:
+    apj_status = "PROBLEM"
+elif apj_exec > 0:
+    apj_status = "EXECUTING"
+elif apj_jobs == apj_succ:
+    apj_status = "COMPLETED"
+else:
+    apj_status = "WAITING"
+
+if emea_fail > 0:
+    emea_status = "PROBLEM"
+elif emea_exec > 0:
+    emea_status = "EXECUTING"
+elif emea_jobs == apj_succ:
+    emea_status = "COMPLETED"
+else:
+    emea_status = "WAITING"
 
 
 def main():
 
-    if bt_global:
+    
 
-        amer, apj, emea = st.columns(3)
+    
 
-        with amer:
-            amer.write(f"({amer_succ}/{amer_jobs}) jobs completed")
-            pro = amer.progress(0)
-            pro.progress(amer_succ_pct)
 
-            bt_amer1 = amer.button('AMER',key=1)
+    amer, apj, emea = st.columns(3)
 
-            if amer_status == 'PROBLEM':
-                components.html(
-                    """
-                <script>
-                 const elements = window.parent.document.querySelectorAll('.stButton button')
-                elements[0].style.backgroundColor = 'red'
-                </script>
+    with amer:
+        st.subheader('AMER')
+        amer.write(f"({amer_succ}/{amer_jobs}) jobs completed")
+        pro = amer.progress(0)
+        pro.progress(amer_succ_pct)
+
+        bt_amer = amer.button(amer_status,key=1)
+
+        if amer_status == "PROBLEM":
+            components.html(
                 """
-                )
-            elif amer_status == 'EXECUTING':
-                components.html(
-                    """
-                <script>
-                const elements = window.parent.document.querySelectorAll('.stButton button')
-                elements[0].style.backgroundColor = 'lightblue'
-                </script>
+            <script>
+            const elements = window.parent.document.querySelectorAll('.stButton button')
+            elements[0].style.backgroundColor = 'red'
+            </script>
+            """
+            )
+
+        elif amer_status == 'EXECUTING':
+            components.html(
                 """
-                )
-            elif amer_status == 'COMPLETED':
-                components.html(
-                    """
-                <script>
-                const elements = window.parent.document.querySelectorAll('.stButton button')
-                elements[0].style.backgroundColor = 'green'
-                </script>
+            <script>
+            const elements = window.parent.document.querySelectorAll('.stButton button')
+            elements[0].style.backgroundColor = 'orange'
+            </script>
+            """
+            )
+        elif amer_status == 'COMPLETED':
+            components.html(
                 """
-                )
-            else:
-                components.html(
-                    """
-                <script>
-                const elements = window.parent.document.querySelectorAll('.stButton button')
-                elements[0].style.backgroundColor = 'yellow'
-                </script>
+            <script>
+            const elements = window.parent.document.querySelectorAll('.stButton button')
+            elements[0].style.backgroundColor = 'green'
+            </script>
+            """
+            )
+        else:
+            components.html(
                 """
-                )
+            <script>
+            const elements = window.parent.document.querySelectorAll('.stButton button')
+            elements[0].style.backgroundColor = 'pink'
+            </script>
+            """
+            )
+
+    with apj:
+        st.subheader('APJ')
+        apj.write(f"({apj_succ}/{apj_jobs}) jobs completed")
+        pro = apj.progress(0)
+        pro.progress(apj_succ_pct)
+
+        bt_apj = apj.button(apj_status,key=2)
+
+        if apj_status == "PROBLEM":
+            components.html(
+                """
+            <script>
+            const elements = window.parent.document.querySelectorAll('.stButton button')
+            elements[1].style.backgroundColor = 'red'
+            </script>
+            """
+            )
+
+        elif apj_status == 'EXECUTING':
+            components.html(
+                """
+            <script>
+            const elements = window.parent.document.querySelectorAll('.stButton button')
+            elements[1].style.backgroundColor = 'orange'
+            </script>
+            """
+            )
+        elif apj_status == 'COMPLETED':
+            components.html(
+                """
+            <script>
+            const elements = window.parent.document.querySelectorAll('.stButton button')
+            elements[1].style.backgroundColor = 'green'
+            </script>
+            """
+            )
+        else:
+            components.html(
+                """
+            <script>
+            const elements = window.parent.document.querySelectorAll('.stButton button')
+            elements[1].style.backgroundColor = 'pink'
+            </script>
+            """
+            )
+
+    with emea:
+        st.subheader('EMEA')
+        emea.write(f"({emea_succ}/{emea_jobs}) jobs completed")
+        pro = emea.progress(0)
+        pro.progress(emea_succ_pct)
+
+        bt_emea = emea.button(emea_status,key=3)
+
+        if emea_status == "PROBLEM":
+            components.html(
+                """
+            <script>
+            const elements = window.parent.document.querySelectorAll('.stButton button')
+            elements[2].style.backgroundColor = 'red'
+            </script>
+            """
+            )
+
+        elif emea_status == 'EXECUTING':
+            components.html(
+                """
+            <script>
+            const elements = window.parent.document.querySelectorAll('.stButton button')
+            elements[2].style.backgroundColor = 'orange'
+            </script>
+            """
+            )
+        elif emea_status == 'COMPLETED':
+            components.html(
+                """
+            <script>
+            const elements = window.parent.document.querySelectorAll('.stButton button')
+            elements[2].style.backgroundColor = 'green'
+            </script>
+            """
+            )
+        else:
+            components.html(
+                """
+            <script>
+            const elements = window.parent.document.querySelectorAll('.stButton button')
+            elements[2].style.backgroundColor = 'pink'
+            </script>
+            """
+            )
       
+    srch = st.sidebar.text_input('Job Name',max_chars=100)
 
+    if srch != "":
 
-    st.write(logs_data.style.applymap(color_survived, subset=["status"]))
+        srch = srch.upper()
+
+        srch_lst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']].where(logs_data['job_name'].str.contains(srch))
+        srch_lst = srch_lst1.dropna(subset=['job_name'])
+        st.write(srch_lst.style.applymap(color_survived, subset=["status"]))
+
+    else:
+        
+        if bt_amer:
+            amer_lst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']].where(logs_data.region=='AMER')
+            amer_lst = amer_lst1.dropna(subset=['job_name'])
+            st.write(amer_lst.style.applymap(color_survived, subset=["status"]))
+        elif bt_apj:
+            apj_lst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']].where(logs_data.region=='APJ')
+            apj_lst = apj_lst1.dropna(subset=['job_name'])
+            st.write(apj_lst.style.applymap(color_survived, subset=["status"]))
+
+        elif bt_emea:
+            emea_lst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']].where(logs_data.region=='EMEA')
+            emea_lst = emea_lst1.dropna(subset=['job_name'])
+            st.write(emea_lst.style.applymap(color_survived, subset=["status"]))
+        else: 
+            global_lst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']]
+            global_lst = global_lst1.dropna(subset=['job_name'])
+            st.write(global_lst.style.applymap(color_survived, subset=["status"]))
 
 
 
 
 main()
+
+
+
+
+
+
+
+
+
+

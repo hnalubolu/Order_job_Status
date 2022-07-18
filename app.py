@@ -8,7 +8,8 @@ import streamlit.components.v1 as components
 import matplotlib.pyplot as plt
 import plotly.express as px
 import seaborn as sns
-
+from st_aggrid import AgGrid,GridUpdateMode, JsCode
+from st_aggrid.grid_options_builder import GridOptionsBuilder
 
 st.set_page_config(layout="wide")
 
@@ -283,29 +284,72 @@ def main():
 
         srch = srch.upper()
 
-        srch_lst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']].where(logs_data['job_name'].str.contains(srch))
-        srch_lst = srch_lst1.dropna(subset=['job_name'])
-        st.write(srch_lst.style.applymap(color_survived, subset=["status"]))
+        mylst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']].where(logs_data['job_name'].str.contains(srch))
+        mylst = mylst1.dropna(subset=['job_name'])
+        
 
     else:
         
         if bt_amer:
-            amer_lst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']].where(logs_data.region=='AMER')
-            amer_lst = amer_lst1.dropna(subset=['job_name'])
-            st.write(amer_lst.style.applymap(color_survived, subset=["status"]))
+            mylst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']].where(logs_data.region=='AMER')
+            mylst = mylst1.dropna(subset=['job_name'])
+            
         elif bt_apj:
-            apj_lst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']].where(logs_data.region=='APJ')
-            apj_lst = apj_lst1.dropna(subset=['job_name'])
-            st.write(apj_lst.style.applymap(color_survived, subset=["status"]))
+            mylst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']].where(logs_data.region=='APJ')
+            mylst = mylst1.dropna(subset=['job_name'])
+          
 
         elif bt_emea:
-            emea_lst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']].where(logs_data.region=='EMEA')
-            emea_lst = emea_lst1.dropna(subset=['job_name'])
-            st.write(emea_lst.style.applymap(color_survived, subset=["status"]))
+            mylst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']].where(logs_data.region=='EMEA')
+            mylst = mylst1.dropna(subset=['job_name'])
+         
         else: 
-            global_lst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']]
-            global_lst = global_lst1.dropna(subset=['job_name'])
-            st.write(global_lst.style.applymap(color_survived, subset=["status"]))
+            mylst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']]
+            mylst = mylst1.dropna(subset=['job_name'])
+            
+
+    mylst.rename(columns = {'job_name':'JOB NAME', 'status':'STATUS',
+                'startTime': 'START TIME', 'endTime':'END TIME',
+                'estimatedStartTime':'ESTIMATED START TIME', 'estimatedEndTime':'ESTIMATED END TIME'}, inplace = True)
+
+    
+    
+    cellstyle_jscode = JsCode("""
+        function(params){
+            if (params.value == 'Ended OK') {
+                return {
+                    'color': 'white',
+                    'backgroundColor' : 'green'
+            }
+            }
+            if (params.value == 'Ended Not OK') {
+                return{
+                    'color'  : 'white',
+                    'backgroundColor' : 'red'
+                }
+            }
+            if (params.value == 'Executing') {
+                return{
+                    'color'  : 'black',
+                    'backgroundColor' : 'orange'
+                }
+            }
+            else{
+                return{
+                    'color': 'black',
+                    'backgroundColor': 'lightpink'
+                }
+            }
+           
+    };
+    """)
+    
+    gd = GridOptionsBuilder.from_dataframe(mylst)
+    gd.configure_pagination(enabled=True)
+    gd.configure_columns("STATUS", cellStyle=cellstyle_jscode)
+    gridoptions = gd.build()
+    grid_table = AgGrid(mylst, gridOptions=gridoptions, update_mode=GridUpdateMode.SELECTION_CHANGED, height=400,
+                allow_unsafe_jscode=True,theme='dark')
 
 
 
