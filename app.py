@@ -275,7 +275,7 @@ def main():
             elements[2].style.backgroundColor = 'pink'
             </script>
             """
-            )
+             )
       
     srch = st.sidebar.text_input('Job Name',max_chars=100)
 
