@@ -124,7 +124,7 @@ if emea_fail > 0:
     emea_status = "PROBLEM"
 elif emea_exec > 0:
     emea_status = "EXECUTING"
-elif emea_jobs == apj_succ:
+elif emea_jobs == emea_succ:
     emea_status = "COMPLETED"
 else:
     emea_status = "WAITING"
