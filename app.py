@@ -1,3 +1,4 @@
+from email import header
 from secrets import choice
 import streamlit as st
 from PIL import Image
@@ -8,7 +9,8 @@ import streamlit.components.v1 as components
 import matplotlib.pyplot as plt
 import plotly.express as px
 import seaborn as sns
-
+from st_aggrid import AgGrid,GridUpdateMode,JsCode
+from st_aggrid.grid_options_builder import GridOptionsBuilder
 
 st.set_page_config(layout="wide")
 
@@ -45,27 +47,29 @@ st.markdown(
     )
 
 
-
-def color_survived(val):
-    color = 'red' if val=="Ended Not OK" else 'pink' if val in ("Wait User", "Wait Condition") else 'lightblue' if val == 'Executing' else 'green'
-    return f'background-color: {color}'
-
 td_data = pd.read_csv('ctm-logs.csv')
 rgn_data = pd.read_csv('regions.csv')
+file = open('refresh_time.csv')
+content = file.readlines()
+r_date = datetime.strptime(content[1][:-4], '%Y-%m-%d %H:%M:%S.%f').strftime("%d-%b-%Y %H:%M:%S") + ' CST'
 
  
 logs_data1 = pd.merge(td_data, rgn_data, on='job_name', how ='left')
 logs_data = logs_data1.replace(np.nan, '',regex=True)
 
+
 logs_data['orderDate'] = pd.to_datetime(logs_data['orderDate'], format='%y%m%d')
 logs_data['orderDate'] = logs_data['orderDate'].dt.strftime('%d-%b-%Y')
+
 
 image = Image.open('Delllogo2.png')
 st.sidebar.image(image)
 st.sidebar.header('Order Jobs Status')
 
-ord_dates = sorted(list(set(logs_data['orderDate'])), reverse=True)
+ord_dates = sorted(list(logs_data['orderDate'].unique()), reverse=True)
 choice = st.sidebar.selectbox("Order Date", ord_dates)
+
+
 
 logs_data = logs_data[logs_data['orderDate']==choice]
 
@@ -275,40 +279,88 @@ def main():
             elements[2].style.backgroundColor = 'pink'
             </script>
             """
-             )
+            )
       
+    
     srch = st.sidebar.text_input('Job Name',max_chars=100)
 
     if srch != "":
 
         srch = srch.upper()
 
-        srch_lst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']].where(logs_data['job_name'].str.contains(srch))
-        srch_lst = srch_lst1.dropna(subset=['job_name'])
-        st.write(srch_lst.style.applymap(color_survived, subset=["status"]))
+        mylst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime', 'description']].where(logs_data['job_name'].str.contains(srch))
+        mylst = mylst1.dropna(subset=['job_name'])
+        
 
     else:
         
         if bt_amer:
-            amer_lst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']].where(logs_data.region=='AMER')
-            amer_lst = amer_lst1.dropna(subset=['job_name'])
-            st.write(amer_lst.style.applymap(color_survived, subset=["status"]))
+            mylst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime', 'description']].where(logs_data.region=='AMER')
+            mylst = mylst1.dropna(subset=['job_name'])
+            
         elif bt_apj:
-            apj_lst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']].where(logs_data.region=='APJ')
-            apj_lst = apj_lst1.dropna(subset=['job_name'])
-            st.write(apj_lst.style.applymap(color_survived, subset=["status"]))
+            mylst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime', 'description']].where(logs_data.region=='APJ')
+            mylst = mylst1.dropna(subset=['job_name'])
+          
 
         elif bt_emea:
-            emea_lst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']].where(logs_data.region=='EMEA')
-            emea_lst = emea_lst1.dropna(subset=['job_name'])
-            st.write(emea_lst.style.applymap(color_survived, subset=["status"]))
+            mylst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime', 'description']].where(logs_data.region=='EMEA')
+            mylst = mylst1.dropna(subset=['job_name'])
+         
         else: 
-            global_lst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime']]
-            global_lst = global_lst1.dropna(subset=['job_name'])
-            st.write(global_lst.style.applymap(color_survived, subset=["status"]))
+            mylst1 = logs_data[['job_name', 'status', 'startTime', 'endTime', 'estimatedStartTime', 'estimatedEndTime', 'description']]
+            mylst = mylst1.dropna(subset=['job_name'])
+            
+
+    mylst.rename(columns = {'job_name':'JOB NAME', 'status':'STATUS',
+                'startTime': 'START TIME', 'endTime':'END TIME',
+                'estimatedStartTime':'ESTIMATED START TIME', 'estimatedEndTime':'ESTIMATED END TIME'
+                , 'description':'DESCRIPTION'}, inplace = True)
+
+    
 
 
+    cellstyle_jscode = JsCode("""
+        function(params){
+            if (params.value == 'Ended OK') {
+                return {
+                    'color': 'white',
+                    'backgroundColor' : 'green'
+            }
+            }
+            if (params.value == 'Ended Not OK') {
+                return{
+                    'color'  : 'white',
+                    'backgroundColor' : 'red'
+                }
+            }
+            if (params.value == 'Executing') {
+                return{
+                    'color'  : 'black',
+                    'backgroundColor' : 'orange'
+                }
+            }
+            else{
+                return{
+                    'color': 'black',
+                    'backgroundColor': 'lightpink'
+                }
+            }
+           
+    };
+    """)
+    
+    gd = GridOptionsBuilder.from_dataframe(mylst)
+    gd.configure_pagination(enabled=True)
+    gd.configure_columns("STATUS", cellStyle=cellstyle_jscode)
+    gd.configure_default_column(tooltipField = 'DESCRIPTION')
+    gridoptions = gd.build()
+    AgGrid(mylst, gridOptions=gridoptions, update_mode=GridUpdateMode.SELECTION_CHANGED, height=400,
+                allow_unsafe_jscode=True,theme='dark')
+    
 
+    st.sidebar.header('Data Refreshed at')
+    st.sidebar.subheader(r_date)
 
 main()
 
