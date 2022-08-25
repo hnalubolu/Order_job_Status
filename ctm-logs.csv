@@ -19,7 +19,7 @@ EBIETLBSLS_AFFINITY_SP1_PRD,5of5u,EBIETLBSLS,Ended OK,                   0,     
 EBIETLBSLS_AFFINITY_SP1_PRD,5nnsy,EBIETLBSLS,Ended OK,                   0,                   0,                   0,2022-08-19 03:01:44,2022-08-19 03:02:49,220819,HOUSEHOLD ROLLUP,EBIETLBSLS,,
 EBIETLBSLS_AFFINITY_SP1_PRD,5rfgw,EBIETLBSLS,Ended OK,                   0,                   0,                   0,2022-08-24 02:10:08,2022-08-24 02:11:13,220824,HOUSEHOLD ROLLUP,EBIETLBSLS,,
 EBIETLBSLS_AFFINITY_SP1_PRD,5mty7,EBIETLBSLS,Ended OK,                   0,                   0,                   0,2022-08-18 02:09:32,2022-08-18 02:10:38,220818,HOUSEHOLD ROLLUP,EBIETLBSLS,,
-EBIETLBCORE_ITM_DOMINO_SRC_LRF_SET1,5s4fa,EBIETLBCORE,Executing,                   0,                   0,                   0,2022-08-25 09:00:03,,220825,Extract data from SRC(Domino) to item's LRF,EBIETLBCORE,2022-08-25 09:00:03,2022-08-25 09:07:23
+EBIETLBCORE_ITM_DOMINO_SRC_LRF_SET1,5s4fa,EBIETLBCORE,Ended OK,                   0,                   0,                   0,2022-08-25 09:00:03,2022-08-25 09:32:28,220825,Extract data from SRC(Domino) to item's LRF,EBIETLBCORE,,
 EBIETLBSLS_AFFINITY_SP1_PRD,5pwhw,EBIETLBSLS,Ended OK,                   0,                   0,                   0,2022-08-22 02:07:50,2022-08-22 02:08:55,220822,HOUSEHOLD ROLLUP,EBIETLBSLS,,
 EBIETLBSLS_AFFINITY_SP1_PRD,5qoye,EBIETLBSLS,Ended OK,                   0,                   0,                   0,2022-08-23 02:29:17,2022-08-23 02:30:23,220823,HOUSEHOLD ROLLUP,EBIETLBSLS,,
 EBIETLBSLS_AFFINITY_SP1_PRD,5p5pk,EBIETLBSLS,Ended OK,                   0,                   0,                   0,2022-08-21 04:41:09,2022-08-21 04:42:13,220821,HOUSEHOLD ROLLUP,EBIETLBSLS,,
