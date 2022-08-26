@@ -330,7 +330,7 @@ EBI_ETL_DLT_FDM_ORD_HASH_FULL_EMC_MD,5pzp3,EBI_ETL_DLT,Ended OK,                
 EBI_ETL_DLT_FDM_ORD_HASH_FULL_EMC_MN,5oiip,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-08-21 04:45:32,2022-08-21 04:54:41,220821,EMC Order Hash Dell(Async),GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_DLY_ORD_EMEA,5nrnw,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-08-20 13:24:38,2022-08-20 13:24:38,220820,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_DLY_ORD_EMEA,5mz7k,EBI_ETL_DLT,Executing,                   0,                   0,                   0,2022-08-19 22:40:31,,220819,,GRC Reporting Tool,2022-08-19 22:40:31,2022-08-20 01:34:50
-EBI_ETL_DLT_FDM_ORD_HASH_INC_DELL_EMEA,5rjbo,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220825,,GRC Reporting Tool,2022-08-26 02:22:30,2022-08-26 02:37:30
+EBI_ETL_DLT_FDM_ORD_HASH_INC_DELL_EMEA,5rjbo,EBI_ETL_DLT,Executing,                   0,                   0,                   0,,,220825,,GRC Reporting Tool,2022-08-26 02:22:30,2022-08-26 02:37:30
 EBI_ETL_DLT_FDM_ORD_HASH_INC_DELL_EMEA,5qsr2,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-08-24 22:07:53,2022-08-24 22:22:57,220824,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_DLY_ORD_APJ,5p92t,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-08-22 14:22:30,2022-08-22 16:31:20,220822,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_ORD_HASH_FULL_EMC_MN,5pzod,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-08-23 02:52:44,2022-08-23 03:04:04,220823,EMC Order Hash Dell(Async),GRC Reporting Tool,,
@@ -351,7 +351,7 @@ EBI_ETL_DLT_FDM_SOAF_DELL_AMER,5pzop,EBI_ETL_DLT,Ended OK,                   0, 
 EBI_ETL_DLT_FDM_SO_HDR_EMC_MN,5oiiq,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-08-21 05:39:18,2022-08-21 06:03:50,220821,SO HEADER,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_EMEA,5nrnv,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220820,,GRC Reporting Tool,2022-08-20 21:34:10,2022-08-20 21:51:51
 EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_APJ,5mz71,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-08-19 14:51:45,2022-08-19 15:23:19,220819,,GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_SOAF_DELL_EMEA,5rjbm,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220825,,GRC Reporting Tool,2022-08-26 02:15:10,2022-08-26 02:19:40
+EBI_ETL_DLT_FDM_SOAF_DELL_EMEA,5rjbm,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,,,220825,,GRC Reporting Tool,2022-08-26 02:15:10,2022-08-26 02:19:40
 EBI_ETL_DLT_FDM_SOAF_DELL_EMEA,5qsr0,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-08-24 21:58:13,2022-08-24 22:04:45,220824,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_EMEA,5p935,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-08-22 22:03:35,2022-08-22 22:21:45,220822,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOAF_DELL_APJ,5pzoi,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-08-23 17:22:43,2022-08-23 17:38:31,220823,,GRC Reporting Tool,,
@@ -379,7 +379,7 @@ EBI_ETL_DLT_FDM_SOIF_DELL_AMER,5pzoo,EBI_ETL_DLT,Ended OK,                   0, 
 SOP_EBIETLBSOP_EMC_SOHD_SOLN_GDW_SRC_LRF_MD,5oypt,SOP_EBIETLBSOP,Ended OK,                   0,                   0,                   0,2022-08-21 13:56:43,2022-08-21 14:03:57,220821,TO LOAD DATA FROM GDW SRC TO LRF FILE,Sales Order & Product - 1003512,,
 EBI_ETL_DLT_FDM_SOAF_DELL_AMER,5nrng,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-08-20 06:31:45,2022-08-20 06:41:04,220820,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_ORD_HASH_FULL_EMC_MN,5mz6t,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-08-19 03:59:52,2022-08-19 04:14:02,220819,EMC Order Hash Dell(Async),GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_SOIF_DELL_EMEA,5rjbl,EBI_ETL_DLT,Executing,                   0,                   0,                   0,,,220825,,GRC Reporting Tool,2022-08-26 01:44:00,2022-08-26 02:15:10
+EBI_ETL_DLT_FDM_SOIF_DELL_EMEA,5rjbl,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,,,220825,,GRC Reporting Tool,2022-08-26 01:44:00,2022-08-26 02:15:10
 EBI_ETL_DLT_FDM_SOIF_DELL_EMEA,5qsqz,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-08-24 21:19:02,2022-08-24 21:58:13,220824,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOAF_DELL_APJ,5p92p,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-08-22 12:09:11,2022-08-22 12:18:57,220822,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOIF_DELL_APJ,5pzoh,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-08-23 13:35:22,2022-08-23 17:22:43,220823,,GRC Reporting Tool,,
