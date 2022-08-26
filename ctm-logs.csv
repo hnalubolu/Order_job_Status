@@ -1,7 +1,7 @@
 job_name,order_id,folder,status,held,deleted,cyclic,startTime,endTime,orderDate,description,application,estimatedStartTime,estimatedEndTime
 EBIETLBCORE_FED_LRF_INC,5occ5,EBIETLBCORE,Ended OK,                   0,                   0,                   0,2022-08-20 03:20:40,2022-08-20 03:20:40,220820,TO LOAD DATA FROM COLLECTION SERVER TO LRF FILE TO INC TABLES,EBIETLBCORE,,
 EBIETLBCORE_FED_LRF_INC,5nls3,EBIETLBCORE,Ended OK,                   0,                   0,                   0,2022-08-19 02:05:50,2022-08-19 02:09:00,220819,TO LOAD DATA FROM COLLECTION SERVER TO LRF FILE TO INC TABLES,EBIETLBCORE,,
-EBIETLPSLS_SRA_ORD_ACCT_MAP_EMEA_DLY_TD1,5s98c,EBIETLPSLS,Wait Condition,                   0,                   0,                   0,,,220825,Extract Data For ord acct map emeaTable,,2022-08-26 01:25:20,2022-08-26 01:25:30
+EBIETLPSLS_SRA_ORD_ACCT_MAP_EMEA_DLY_TD1,5s98c,EBIETLPSLS,Ended OK,                   0,                   0,                   0,,,220825,Extract Data For ord acct map emeaTable,,2022-08-26 01:25:20,2022-08-26 01:25:30
 EBIETLBCORE_FED_LRF_INC,5rdkc,EBIETLBCORE,Ended OK,                   0,                   0,                   0,2022-08-24 01:43:47,2022-08-24 01:44:53,220824,TO LOAD DATA FROM COLLECTION SERVER TO LRF FILE TO INC TABLES,EBIETLBCORE,,
 EBIETLBCORE_FED_LRF_INC,5ptpg,EBIETLBCORE,Ended OK,                   0,                   0,                   0,2022-08-22 02:13:18,2022-08-22 02:15:25,220822,TO LOAD DATA FROM COLLECTION SERVER TO LRF FILE TO INC TABLES,EBIETLBCORE,,
 EBIETLBCORE_FED_LRF_INC,5qn04,EBIETLBCORE,Ended OK,                   0,                   0,                   0,2022-08-23 03:58:35,2022-08-23 04:01:44,220823,TO LOAD DATA FROM COLLECTION SERVER TO LRF FILE TO INC TABLES,EBIETLBCORE,,
@@ -218,7 +218,7 @@ EBIETLPSLS_SRA_PW_PO_BAND_EMC_TD1_MD,5qnb2,EBIETLPSLS,Ended OK,                 
 EBIETLPSLS_OAM_APJ,5p5iv,EBIETLPSLS,Ended OK,                   0,                   0,                   0,2022-08-21 10:56:49,2022-08-21 12:15:07,220821,Extract Data For ord acct map apj Table,EBIETLPSLS,,
 EBIETLPSLS_OAM_EMC_MD,5odoc,EBIETLPSLS,Ended OK,                   0,                   0,                   0,2022-08-20 13:51:03,2022-08-20 14:03:32,220820,Extract Data For ord acct map EMCTable,EBIETLPSLS,,
 EBIETLPSLS_OAM_EMC,5nnnk,EBIETLPSLS,Ended OK,                   0,                   0,                   0,2022-08-19 02:01:36,2022-08-19 02:19:13,220819,load for SLS_PKG.ORD_ACCT_ASSN_EMC,EBIETLPSLS,,
-EBIETLPSLS_SRA_PW_PO_BAND_EMEA_TD1,5s90o,EBIETLPSLS,Wait Condition,                   0,                   0,                   0,,,220825,Extract Data for PO Band EMEA,EBIETLPSLS,2022-08-26 01:26:50,2022-08-26 01:31:50
+EBIETLPSLS_SRA_PW_PO_BAND_EMEA_TD1,5s90o,EBIETLPSLS,Ended OK,                   0,                   0,                   0,,,220825,Extract Data for PO Band EMEA,EBIETLPSLS,2022-08-26 01:26:50,2022-08-26 01:31:50
 EBIETLPSLS_SRA_PW_PO_BAND_EMEA_TD1,5rdvb,EBIETLPSLS,Ended OK,                   0,                   0,                   0,2022-08-24 20:57:50,2022-08-24 21:05:08,220824,Extract Data for PO Band EMEA,EBIETLPSLS,,
 EBIETLPSLS_OAM_EMC,5pwdw,EBIETLPSLS,Ended OK,                   0,                   0,                   0,2022-08-22 01:50:58,2022-08-22 02:15:30,220822,load for SLS_PKG.ORD_ACCT_ASSN_EMC,EBIETLPSLS,,
 EBIETLPSLS_SRA_PW_PO_BAND_EMEA_TD1,5qnb4,EBIETLPSLS,Ended OK,                   0,                   0,                   0,2022-08-23 19:58:19,2022-08-23 20:03:30,220823,Extract Data for PO Band EMEA,EBIETLPSLS,,
@@ -429,7 +429,7 @@ EBI_ETL_DLT_FDM_SPLT_ACCT_DELL_DLY_APJ,5p92n,EBI_ETL_DLT,Ended OK,              
 EBI_ETL_DLT_FDM_SPLT_ACCT_DELL_DLY_APJ,5pzog,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-08-23 11:43:21,2022-08-23 11:49:32,220823,Daily Split account,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SO_HDR_EMC_MN,5nrnb,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-08-20 02:32:50,2022-08-20 02:47:10,220820,SO HEADER,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOIF_DELL_EMEA,5mz7d,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-08-19 19:42:51,2022-08-19 20:07:07,220819,,GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_SPLT_CRDT_DELL_EMEA,5rjbj,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220825,,GRC Reporting Tool,2022-08-26 01:35:00,2022-08-26 01:35:40
+EBI_ETL_DLT_FDM_SPLT_CRDT_DELL_EMEA,5rjbj,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,,,220825,,GRC Reporting Tool,2022-08-26 01:35:00,2022-08-26 01:35:40
 EBI_ETL_DLT_FDM_SPLT_CRDT_DELL_EMEA,5qsqx,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-08-24 21:09:21,2022-08-24 21:09:28,220824,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SPLT_CRDT_DELL_EMEA,5p92x,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-08-22 20:38:53,2022-08-22 20:41:34,220822,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SPLT_CRDT_DELL_EMEA,5pzox,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-08-23 19:57:48,2022-08-23 19:57:57,220823,,GRC Reporting Tool,,
