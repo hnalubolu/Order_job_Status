@@ -22,7 +22,7 @@ EBIETLBSLS_AFFINITY_SP2_PRD,0brfk,EBIETLBSLS,Ended OK,                   0,     
 EBIETLBSLS_AFFINITY_SP2_PRD,0f9qe,EBIETLBSLS,Ended OK,                   0,                   0,                   0,2022-09-22 07:03:47,2022-09-22 07:04:51,220922,HOUSEHOLD ROLLUP,EBIETLBSLS,,
 EBIETLBSLS_AFFINITY_SP2_PRD,0b1d3,EBIETLBSLS,Ended OK,                   0,                   0,                   0,2022-09-17 07:17:11,2022-09-17 07:18:15,220917,HOUSEHOLD ROLLUP,EBIETLBSLS,,
 EBIETLBSLS_AFFINITY_SP2_PRD,0chqx,EBIETLBSLS,Ended OK,                   0,                   0,                   0,2022-09-19 04:30:10,2022-09-19 04:31:15,220919,HOUSEHOLD ROLLUP,EBIETLBSLS,,
-EBIETLBSLS_AFFINITY_SP2_PRD,0g0gp,EBIETLBSLS,Wait Condition,                   0,                   0,                   0,,,220923,HOUSEHOLD ROLLUP,EBIETLBSLS,2022-09-23 05:03:00,2022-09-23 05:04:00
+EBIETLBSLS_AFFINITY_SP2_PRD,0g0gp,EBIETLBSLS,Ended OK,                   0,                   0,                   0,2022-09-23 04:59:30,2022-09-23 05:00:35,220923,HOUSEHOLD ROLLUP,EBIETLBSLS,,
 EBIETLBSLS_AFFINITY_USAFFINITYTML01,0dtjd,EBIETLBSLS,Ended OK,                   0,                   0,                   0,2022-09-20 01:55:27,2022-09-20 01:56:31,220920,HOUSEHOLD ROLLUP,EBIETLBSLS,,
 EBIETLBSLS_AFFINITY_USAFFINITYTML01,0ab4n,EBIETLBSLS,Ended OK,                   0,                   0,                   0,2022-09-16 03:37:34,2022-09-16 03:38:39,220916,HOUSEHOLD ROLLUP,EBIETLBSLS,,
 EBIETLBSLS_AFFINITY_USAFFINITYTML01,0ekbr,EBIETLBSLS,Ended OK,                   0,                   0,                   0,2022-09-21 01:59:09,2022-09-21 02:00:20,220921,HOUSEHOLD ROLLUP,EBIETLBSLS,,
@@ -206,7 +206,7 @@ EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_AMER,0b7m5,EBI_ETL_DLT,Ended OK,              
 EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_AMER,0ep34,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-22 07:44:20,2022-09-22 08:45:09,220922,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_AMER,0ahc2,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-17 10:53:27,2022-09-17 11:39:52,220917,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_APJ,0bxs4,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-19 15:13:34,2022-09-19 16:12:10,220919,,GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_SOIF_DELL_EMEA,0ff1l,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 20:03:10,2022-09-23 20:46:50
+EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_AMER,0ff1f,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 07:07:30,2022-09-23 07:36:00
 EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_AMER,0d8bg,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-20 06:49:49,2022-09-20 07:47:41,220920,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_AMER,09kxn,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-16 09:10:08,2022-09-16 10:11:34,220916,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_APJ,0dyy9,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-21 15:20:24,2022-09-21 16:09:18,220921,,GRC Reporting Tool,,
@@ -214,7 +214,7 @@ EBI_ETL_DLT_FDM_CUBE_DLY_ORD_AMER,0b7kt,EBI_ETL_DLT,Ended OK,                   
 EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_APJ,0ep35,EBI_ETL_DLT,Wait Condition,                   0,                   1,                   0,,,220922,,GRC Reporting Tool,2022-09-22 22:00:50,2022-09-22 22:49:20
 EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_EMEA,0ahc3,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-17 23:25:45,,220917,,GRC Reporting Tool,2022-09-17 23:25:45,2022-09-18 00:12:20
 EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_EMEA,0bxs5,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-19 22:21:20,2022-09-19 23:10:51,220919,,GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_SOIF_DELL_APJ,0ff15,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 13:35:20,2022-09-23 14:22:40
+EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_APJ,0ff19,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 15:58:30,2022-09-23 16:24:20
 EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_APJ,0d8bh,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-20 14:30:19,2022-09-20 15:22:12,220920,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_EMEA,09kxo,EBI_ETL_DLT,Ended OK,                   1,                   0,                   0,,,220916,,GRC Reporting Tool,2022-09-17 18:36:00,2022-09-17 19:22:30
 EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_EMEA,0dyya,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,,,220921,,GRC Reporting Tool,2022-09-22 00:13:20,2022-09-22 01:01:00
@@ -222,7 +222,7 @@ EBI_ETL_DLT_FDM_CUBE_DLY_QTE_INC_AMER,0b7lw,EBI_ETL_DLT,Ended OK,               
 EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_EMEA,0ep36,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-22 22:29:56,2022-09-22 23:20:00,220922,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_DLY_DIM,0ah9j,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-17 19:26:34,2022-09-17 20:11:58,220917,Dimension refresh on Daily cube,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_DLY_DIM,0bxqg,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-19 18:57:04,2022-09-19 19:43:59,220919,Dimension refresh on Daily cube,GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_AMER,0ff3p,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 07:01:50,2022-09-23 07:58:00
+EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_AMER,0ff3p,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 07:05:00,2022-09-23 08:01:10
 EBI_ETL_DLT_FDM_CUBE_DLY_DIM,0d898,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-20 18:14:31,2022-09-20 19:05:37,220920,Dimension refresh on Daily cube,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_DLY_DIM_AFFI,09kxp,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,,,220916,Dimension refresh on Daily cube,GRC Reporting Tool,2022-09-17 19:22:30,2022-09-17 20:03:10
 EBI_ETL_DLT_FDM_CUBE_DLY_DIM,0dyvy,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-21 19:13:09,2022-09-21 19:56:14,220921,Dimension refresh on Daily cube,GRC Reporting Tool,,
@@ -246,7 +246,7 @@ EBI_ETL_DLT_FDM_SOAF_DELL_AMER,0b7kq,EBI_ETL_DLT,Ended OK,                   0, 
 EBI_ETL_DLT_FDM_CUBE_DLY_ORD_AMER,0ep0u,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-22 08:45:10,2022-09-22 11:19:17,220922,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_DLY_ORD_EMEA,0ah9v,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,,,220917,,GRC Reporting Tool,2022-09-18 00:12:20,2022-09-18 02:33:20
 EBI_ETL_DLT_FDM_CUBE_DLY_ORD_EMEA,0bxqs,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-19 23:10:51,,220919,,GRC Reporting Tool,2022-09-19 23:10:51,2022-09-20 01:31:30
-EBI_ETL_DLT_FDM_CUBE_DLY_ORD_AMER,0ff1g,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 07:58:00,2022-09-23 10:08:30
+EBI_ETL_DLT_FDM_CUBE_DLY_ORD_AMER,0ff1g,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 08:01:10,2022-09-23 10:11:40
 EBI_ETL_DLT_FDM_CUBE_DLY_ORD_APJ,0d890,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-20 15:22:13,2022-09-20 18:14:30,220920,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_DLY_QTE_INC_AMER,09kxd,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-16 06:59:45,2022-09-16 07:26:39,220916,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_DLY_ORD_APJ,0dyvq,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-21 16:09:18,2022-09-21 19:13:08,220921,,GRC Reporting Tool,,
@@ -270,7 +270,7 @@ POS_SLS_INFA_FILE_TD_FED_LRF_INC,0beiu,POS_TD,Ended OK,                   0,    
 EBI_ETL_DLT_FDM_CUBE_DLY_QTE_INC_AMER,0ep2u,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-22 05:42:53,2022-09-22 06:12:06,220922,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_EMEA,0ah9u,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-17 23:26:43,2022-09-17 23:42:13,220917,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_ORD_HASH_FULL_DELL_APJ,0bxqc,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-19 13:49:32,2022-09-19 14:09:07,220919,Full refresh During APJ window,GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_AMER,0ff1f,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 07:04:20,2022-09-23 07:32:50
+EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_EMEA,0ff1r,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 21:54:40,2022-09-23 22:16:00
 EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_AMER,0d896,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-20 06:53:09,2022-09-20 07:31:01,220920,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_EMEA,09kvp,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-16 22:12:19,2022-09-16 22:28:35,220916,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_AMER,0dyvw,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-21 07:39:51,2022-09-21 08:13:25,220921,,GRC Reporting Tool,,
@@ -278,7 +278,7 @@ POS_SLS_INFA_TD_TD_DELL_EMC_LCL_CHNL_CUST_RSTMNT_APJ,0behx,POS_TD,Ended OK,     
 EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_AMER,0ep0t,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-22 07:48:34,2022-09-22 08:33:59,220922,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_ORD_HASH_FULL_EMC_MD,0ah9s,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-17 22:55:21,2022-09-17 23:07:13,220917,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_ORD_HASH_FULL_EMC_MD,0bxqp,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-19 21:35:34,2022-09-19 21:45:13,220919,,GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_APJ,0ff19,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 15:58:30,2022-09-23 16:24:20
+EBI_ETL_DLT_FDM_ORD_HASH_FULL_DELL_APJ,0ff17,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,Full refresh During APJ window,GRC Reporting Tool,2022-09-23 14:34:40,2022-09-23 14:54:40
 EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_APJ,0d88z,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-20 14:33:40,2022-09-20 14:59:06,220920,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_ORD_HASH_FULL_DELL_APJ,09kv5,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-16 16:21:07,2022-09-16 16:41:12,220916,Full refresh During APJ window,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_APJ,0dyvp,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-21 15:22:26,2022-09-21 15:49:33,220921,,GRC Reporting Tool,,
@@ -286,7 +286,7 @@ POS_SLS_INFA_TD_TD_DELL_EMC_LCL_CHNL_CUST_RSTMNT_EMEA,0bej0,POS_TD,Ended OK,    
 EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_APJ,0ep0m,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-22 19:48:59,2022-09-22 20:09:14,220922,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_ORD_HASH_FULL_EMC_MN,0ah99,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-17 05:56:06,2022-09-17 06:05:56,220917,EMC Order Hash Dell(Async),GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_ORD_HASH_INC_DELL_EMEA,0bxqo,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-19 20:44:31,2022-09-19 21:12:25,220919,,GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_EMEA,0ff1r,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 21:54:40,2022-09-23 22:16:00
+EBI_ETL_DLT_FDM_ORD_HASH_FULL_EMC_MD,0ff1p,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 21:24:40,2022-09-23 21:33:50
 EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_EMEA,0d89j,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-20 22:45:56,2022-09-20 23:11:38,220920,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_ORD_HASH_FULL_EMC_MD,09kvn,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-16 21:46:10,2022-09-16 21:54:54,220916,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_EMEA,0dyw9,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,,,220921,,GRC Reporting Tool,2022-09-22 00:15:10,2022-09-22 00:35:10
@@ -294,7 +294,7 @@ POS_SLS_INFA_TD_TD_EMC_LCL_CHNL_RSTMNT,0bei9,POS_TD,Ended OK,                   
 EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_EMEA,0ep16,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-22 22:32:32,2022-09-22 22:57:54,220922,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_ORD_HASH_INC_DELL_EMEA,0ah9r,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-17 22:36:21,2022-09-17 22:55:21,220917,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOAF_DELL_APJ,0bxqb,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-19 13:30:58,2022-09-19 13:46:10,220919,,GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_ORD_HASH_FULL_DELL_APJ,0ff17,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,Full refresh During APJ window,GRC Reporting Tool,2022-09-23 14:34:40,2022-09-23 14:54:40
+EBI_ETL_DLT_FDM_ORD_HASH_FULL_EMC_MN,0ff11,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-23 02:42:10,2022-09-23 03:01:14,220923,EMC Order Hash Dell(Async),GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_ORD_HASH_FULL_DELL_APJ,0d88x,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-20 12:48:32,2022-09-20 13:12:46,220920,Full refresh During APJ window,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_ORD_HASH_FULL_EMC_MN,09kuz,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-16 02:43:14,2022-09-16 03:00:10,220916,EMC Order Hash Dell(Async),GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_ORD_HASH_FULL_DELL_APJ,0dyvn,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-21 13:47:26,2022-09-21 14:17:34,220921,Full refresh During APJ window,GRC Reporting Tool,,
@@ -302,7 +302,7 @@ POS_SLS_INFA_TD_TD_GBLSLS_PKG_AMER,0begp,POS_TD,Ended OK,                   0,  
 EBI_ETL_DLT_FDM_ORD_HASH_FULL_DELL_APJ,0ep0k,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-22 18:49:02,2022-09-22 19:20:07,220922,Full refresh During APJ window,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOAF_DELL_AMER,0ah9f,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-17 09:56:17,2022-09-17 10:03:23,220917,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOAF_DELL_EMEA,0bxqm,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-19 20:26:19,2022-09-19 20:39:44,220919,,GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_ORD_HASH_FULL_EMC_MD,0ff1p,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 21:24:40,2022-09-23 21:33:50
+EBI_ETL_DLT_FDM_ORD_HASH_INC_DELL_EMEA,0ff1o,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 20:58:40,2022-09-23 21:18:50
 EBI_ETL_DLT_FDM_ORD_HASH_FULL_EMC_MD,0d89h,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-20 22:14:39,2022-09-20 22:23:53,220920,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_ORD_HASH_INC_DELL_EMEA,09kvm,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-16 21:18:49,2022-09-16 21:46:10,220916,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_ORD_HASH_FULL_EMC_MD,0dyw7,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-21 23:39:51,2022-09-21 23:55:25,220921,,GRC Reporting Tool,,
@@ -310,7 +310,7 @@ POS_SLS_INFA_TD_TD_GBLSLS_PKG_AMER_INC,0bef4,POS_TD,Ended OK,                   
 EBI_ETL_DLT_FDM_ORD_HASH_FULL_EMC_MD,0ep14,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-22 21:56:19,2022-09-22 22:08:20,220922,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOAF_DELL_EMEA,0ah9p,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-17 22:24:02,2022-09-17 22:31:25,220917,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOIF_DELL_APJ,0bxqa,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-19 12:09:51,2022-09-19 13:30:58,220919,,GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_ORD_HASH_FULL_EMC_MN,0ff11,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-23 02:42:10,2022-09-23 03:01:14,220923,EMC Order Hash Dell(Async),GRC Reporting Tool,,
+EBI_ETL_DLT_FDM_SOAF_DELL_AMER,0ff1c,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 06:12:30,2022-09-23 06:24:30
 EBI_ETL_DLT_FDM_ORD_HASH_FULL_EMC_MN,0d88r,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-20 03:03:24,2022-09-20 03:17:56,220920,EMC Order Hash Dell(Async),GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOAF_DELL_AMER,09kva,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-16 07:49:12,2022-09-16 08:06:27,220916,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_ORD_HASH_FULL_EMC_MN,0dyvh,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-21 03:12:24,2022-09-21 03:29:02,220921,EMC Order Hash Dell(Async),GRC Reporting Tool,,
@@ -318,7 +318,7 @@ POS_SLS_INFA_TD_TD_GBLSLS_PKG_APJ_FIN,0beis,POS_TD,Ended OK,                   0
 EBI_ETL_DLT_FDM_ORD_HASH_FULL_EMC_MN,0ep0e,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-22 03:19:50,2022-09-22 03:38:48,220922,EMC Order Hash Dell(Async),GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOAF_EMC_MN,0ah97,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-17 05:48:19,2022-09-17 05:54:14,220917,SOAF Load,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOIF_DELL_EMEA,0bxql,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-19 19:46:16,2022-09-19 20:26:18,220919,,GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_ORD_HASH_INC_DELL_EMEA,0ff1o,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 20:58:40,2022-09-23 21:18:50
+EBI_ETL_DLT_FDM_SOAF_DELL_APJ,0ff16,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 14:22:40,2022-09-23 14:32:00
 EBI_ETL_DLT_FDM_ORD_HASH_INC_DELL_EMEA,0d89g,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-20 21:48:50,2022-09-20 22:14:39,220920,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOAF_DELL_APJ,09kv4,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-16 15:50:04,2022-09-16 15:55:27,220916,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_ORD_HASH_INC_DELL_EMEA,0dyw6,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-21 23:01:22,2022-09-21 23:28:53,220921,,GRC Reporting Tool,,
@@ -326,7 +326,7 @@ POS_SLS_INFA_TD_TD_GBLSLS_PKG_CUST_RESTMT,0bef5,POS_TD,Ended OK,                
 EBI_ETL_DLT_FDM_ORD_HASH_INC_DELL_EMEA,0ep13,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-22 21:30:56,2022-09-22 21:59:56,220922,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOIF_DELL_AMER,0ah9e,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-17 09:12:33,2022-09-17 09:56:17,220917,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOIF_EMC_MD,0bxqk,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-19 19:04:58,2022-09-19 19:14:39,220919,,GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_SOAF_DELL_AMER,0ff1c,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 06:09:20,2022-09-23 06:21:20
+EBI_ETL_DLT_FDM_SOAF_DELL_EMEA,0ff1m,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 20:46:50,2022-09-23 20:54:40
 EBI_ETL_DLT_FDM_SOAF_DELL_AMER,0d893,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-20 05:31:46,2022-09-20 05:51:15,220920,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOAF_DELL_EMEA,09kvk,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-16 21:03:15,2022-09-16 21:13:06,220916,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOAF_DELL_AMER,0dyvt,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-21 06:04:02,2022-09-21 06:20:47,220921,,GRC Reporting Tool,,
@@ -334,7 +334,7 @@ POS_SLS_INFA_TD_TD_GBLSLS_PKG_DRIVER_APJ,0bef7,POS_TD,Ended OK,                 
 EBI_ETL_DLT_FDM_SOAF_DELL_AMER,0ep0q,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-22 17:54:21,2022-09-22 18:07:56,220922,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOIF_DELL_EMEA,0ah9o,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-17 21:44:14,2022-09-17 22:24:02,220917,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SO_HDR_DELL_APJ,0bxqd,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-19 14:56:45,2022-09-19 15:13:34,220919,,GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_SOAF_DELL_APJ,0ff16,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 14:22:40,2022-09-23 14:32:00
+EBI_ETL_DLT_FDM_SOAF_EMC_MN,0ff0z,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-23 02:27:38,2022-09-23 02:37:35,220923,SOAF Load,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOAF_DELL_APJ,0d88w,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-20 12:31:43,2022-09-20 12:46:21,220920,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOAF_EMC_MN,09kux,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-16 02:26:30,2022-09-16 02:34:07,220916,SOAF Load,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOAF_DELL_APJ,0dyvm,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-21 13:28:19,2022-09-21 13:42:33,220921,,GRC Reporting Tool,,
@@ -342,7 +342,7 @@ POS_SLS_INFA_TD_TD_GBLSLS_PKG_DRIVER_EMEA,0bef8,POS_TD,Ended OK,                
 EBI_ETL_DLT_FDM_SOAF_DELL_APJ,0ep0j,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-22 18:27:11,2022-09-22 18:43:20,220922,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOIF_EMC_MD,0ah9n,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-17 21:15:41,2022-09-17 21:29:45,220917,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SO_HDR_DELL_EMEA,0bxqq,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-19 21:45:13,2022-09-19 21:56:09,220919,,GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_SOAF_DELL_EMEA,0ff1m,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 20:46:50,2022-09-23 20:54:40
+EBI_ETL_DLT_FDM_SOIF_DELL_AMER,0ff1b,EBI_ETL_DLT,Executing,                   0,                   0,                   0,2022-09-23 05:05:09,,220923,,GRC Reporting Tool,2022-09-23 05:05:09,2022-09-23 06:12:30
 EBI_ETL_DLT_FDM_SOAF_DELL_EMEA,0d89e,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-20 21:37:08,2022-09-20 21:45:30,220920,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOIF_DELL_AMER,09kv9,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-16 06:05:29,2022-09-16 07:49:12,220916,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOAF_DELL_EMEA,0dyw4,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-21 22:46:55,2022-09-21 22:57:32,220921,,GRC Reporting Tool,,
@@ -350,7 +350,7 @@ POS_SLS_INFA_TD_TD_GBLSLS_PKG_INC_APJ,0befk,POS_TD,Ended OK,                   0
 EBI_ETL_DLT_FDM_SOAF_DELL_EMEA,0ep11,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-22 21:15:53,2022-09-22 21:25:29,220922,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOIF_EMC_MN,0ah96,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-17 05:27:02,2022-09-17 05:48:19,220917,SOIF Load,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SPLT_ACCT_DELL_DLY_APJ,0bxq9,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-19 11:58:07,2022-09-19 12:09:50,220919,Daily Split account,GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_SOAF_EMC_MN,0ff0z,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-23 02:27:38,2022-09-23 02:37:35,220923,SOAF Load,GRC Reporting Tool,,
+EBI_ETL_DLT_FDM_SOIF_DELL_APJ,0ff15,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 13:35:20,2022-09-23 14:22:40
 EBI_ETL_DLT_FDM_SOAF_EMC_MN,0d88p,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-20 02:45:05,2022-09-20 02:57:36,220920,SOAF Load,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOIF_DELL_APJ,09kv3,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-16 14:56:35,2022-09-16 15:50:01,220916,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOAF_EMC_MN,0dyvf,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-21 03:02:27,2022-09-21 03:09:22,220921,SOAF Load,GRC Reporting Tool,,
@@ -358,7 +358,7 @@ POS_SLS_INFA_TD_TD_GBLSLS_PKG_INC_CUST_RESTMNT_EXCPTN_APJ,0befc,POS_TD,Ended OK,
 EBI_ETL_DLT_FDM_SOAF_EMC_MN,0ep0c,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-22 03:05:03,2022-09-22 03:15:16,220922,SOAF Load,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SO_HDR_DELL_EMEA,0ah9t,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-17 23:07:14,2022-09-17 23:25:44,220917,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SPLT_CRDT_DELL_EMEA,0bxqj,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-19 19:33:34,2022-09-19 19:36:15,220919,,GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_SOIF_DELL_AMER,0ff1b,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 05:01:50,2022-09-23 06:09:20
+EBI_ETL_DLT_FDM_SOIF_DELL_EMEA,0ff1l,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 20:03:10,2022-09-23 20:46:50
 EBI_ETL_DLT_FDM_SOIF_DELL_AMER,0d892,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-20 04:02:37,2022-09-20 05:31:46,220920,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOIF_DELL_EMEA,09kvj,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-16 20:21:28,2022-09-16 21:03:15,220916,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOIF_DELL_AMER,0dyvs,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-21 04:17:50,2022-09-21 06:03:59,220921,,GRC Reporting Tool,,
@@ -382,7 +382,7 @@ POS_SLS_INFA_TD_TD_GBLSLS_PKG_INC_PKG_EMEA,0befp,POS_TD,Ended OK,               
 EBI_ETL_DLT_FDM_SOIF_DELL_EMEA,0ep10,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-22 20:16:56,2022-09-22 21:15:53,220922,,GRC Reporting Tool,,
 POS_SLS_INFA_FILE_TD_FED_LRF_INC,0aohd,POS_TD,Ended OK,                   0,                   0,                   0,2022-09-17 03:21:46,2022-09-17 03:24:56,220917,TO LOAD DATA FROM COLLECTION SERVER TO LRF FILE TO INC TABLES,Sales Order & Product - 1003512,,
 POS_SLS_INFA_TD_TD_DELL_EMC_LCL_CHNL_CUST_RSTMNT_APJ,0c4u3,POS_TD,Ended OK,                   0,                   0,                   0,2022-09-19 12:41:15,2022-09-19 12:44:24,220919,DELL to EMC local channel customer restatement for APJ,Sales Order & Product - 1003512,,
-EBI_ETL_DLT_FDM_SO_HDR_DELL_AMER,0ff1e,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 06:24:50,2022-09-23 07:01:50
+EBI_ETL_DLT_FDM_SO_HDR_DELL_AMER,0ff1e,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220923,,GRC Reporting Tool,2022-09-23 06:28:00,2022-09-23 07:05:00
 EBI_ETL_DLT_FDM_SOIF_EMC_MD,0d89c,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-20 19:04:42,2022-09-20 19:13:47,220920,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SO_HDR_DELL_AMER,09kvc,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-16 08:11:07,2022-09-16 09:09:33,220916,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SOIF_EMC_MD,0dyw2,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-09-21 19:05:03,2022-09-21 19:14:34,220921,,GRC Reporting Tool,,
