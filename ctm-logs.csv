@@ -74,7 +74,7 @@ EBI_ETL_DLT_FDM_CUBE_DLY_DIM_AFFI,0ld96,EBI_ETL_DLT,Ended OK,                   
 EBIETLBSLS_AFFINITY_USAFFRML01,0kg22,EBIETLBSLS,Ended OK,                   0,                   0,                   0,2022-09-29 02:00:16,2022-09-29 02:01:32,220929,HOUSEHOLD ROLLUP,EBIETLBSLS,,
 EBI_ETL_DLT_FDM_CUBE_DLY_ORD_AMER,0njgn,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-04 07:42:14,2022-10-04 09:42:58,221004,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_DLY_ORD_APJ,0mtfh,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-03 16:28:33,2022-10-03 18:44:23,221003,,GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_CUBE_DLY_ORD_AMER,0ozlf,EBI_ETL_DLT,Ended Not OK,                   0,                   0,                   0,2022-10-06 06:57:40,2022-10-06 08:56:43,221006,,GRC Reporting Tool,2022-10-06 09:24:50,2022-10-06 11:37:10
+EBI_ETL_DLT_FDM_CUBE_DLY_ORD_AMER,0ozlf,EBI_ETL_DLT,Ended Not OK,                   0,                   0,                   0,2022-10-06 06:57:40,2022-10-06 08:56:43,221006,,GRC Reporting Tool,2022-10-06 09:55:10,2022-10-06 12:07:30
 EBI_ETL_DLT_FDM_CUBE_DLY_ORD_AMER,0o9h0,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-05 09:19:03,2022-10-05 11:22:11,221005,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_DLY_ORD_EMEA,0kmcj,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,220930,,GRC Reporting Tool,2022-10-01 02:49:40,2022-10-01 05:19:20
 EBI_ETL_DLT_FDM_ORD_HASH_FULL_EMC_MN,0m3g7,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-02 07:00:10,2022-10-02 07:14:10,221002,EMC Order Hash Dell(Async),GRC Reporting Tool,,
