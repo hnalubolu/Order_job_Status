@@ -25,7 +25,7 @@ EBIETLBSLS_AFFINITY_USAFFRML01,0ynnw,EBIETLBSLS,Ended OK,                   0,  
 EBIETLBSLS_AFFINITY_USAFFRML01,105my,EBIETLBSLS,Ended OK,                   0,                   0,                   0,2022-10-20 01:55:35,2022-10-20 01:56:41,221020,HOUSEHOLD ROLLUP,EBIETLBSLS,,
 EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_AMER,0v2es,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-14 11:35:43,2022-10-14 12:38:07,221014,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_APJ,0xa9q,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-17 16:38:47,2022-10-17 17:36:42,221017,,GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_AMER,10am5,EBI_ETL_DLT,Executing,                   0,                   0,                   0,2022-10-21 05:55:18,,221021,,GRC Reporting Tool,2022-10-21 05:55:18,2022-10-21 06:57:40
+EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_AMER,10am5,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-21 05:55:18,2022-10-21 06:57:32,221021,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_AMER,0yt8j,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-19 05:58:55,2022-10-19 07:05:05,221019,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_AMER,0y0go,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-18 06:51:02,2022-10-18 07:55:04,221018,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_AMER,0zk5m,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-20 08:50:11,2022-10-20 08:50:11,221020,,GRC Reporting Tool,,
@@ -43,7 +43,7 @@ EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_EMEA,0y0gq,EBI_ETL_DLT,Ended OK,              
 EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_EMEA,0zk5o,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-20 22:53:24,2022-10-20 23:45:16,221020,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_DLY_ORD_AMER,0v2cl,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-14 12:38:07,2022-10-14 14:35:37,221014,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_DLY_DIM_AFFI,0xa9s,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-17 20:47:34,2022-10-17 22:06:46,221017,Dimension refresh on Daily cube,GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_CUBE_DLY_ORD_AMER,10ajy,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,221021,,GRC Reporting Tool,2022-10-21 06:57:40,2022-10-21 08:53:40
+EBI_ETL_DLT_FDM_CUBE_DLY_ORD_AMER,10ajy,EBI_ETL_DLT,Executing,                   0,                   0,                   0,2022-10-21 06:57:33,,221021,,GRC Reporting Tool,2022-10-21 06:57:33,2022-10-21 08:53:30
 EBI_ETL_DLT_FDM_CUBE_DLY_DIM,0yt69,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-19 18:12:40,2022-10-19 18:57:56,221019,Dimension refresh on Daily cube,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_DLY_DIM,0y0eg,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-18 18:42:32,2022-10-18 19:28:49,221018,Dimension refresh on Daily cube,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_DLY_DIM,0zk3c,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-20 18:45:51,2022-10-20 19:30:10,221020,Dimension refresh on Daily cube,GRC Reporting Tool,,
@@ -61,7 +61,7 @@ EBI_ETL_DLT_FDM_CUBE_DLY_ORD_AMER,0y0ef,EBI_ETL_DLT,Ended OK,                   
 EBI_ETL_DLT_FDM_CUBE_DLY_ORD_AMER,0zk3b,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-20 08:50:11,2022-10-20 10:45:14,221020,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_AMER,0v2ck,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-14 11:39:00,2022-10-14 11:57:19,221014,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_APJ,0xa80,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-17 16:42:19,2022-10-17 17:11:33,221017,,GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_AMER,10ajx,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-21 06:40:19,2022-10-21 06:54:44,221021,,GRC Reporting Tool,2022-10-21 06:40:19,2022-10-21 07:10:00
+EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_AMER,10ajx,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-21 06:40:19,2022-10-21 06:54:44,221021,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_DLY_ORD_APJ,0yt61,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-19 15:45:15,2022-10-19 18:12:40,221019,,GRC Reporting Tool,2022-10-19 15:45:15,2022-10-19 18:12:40
 EBI_ETL_DLT_FDM_CUBE_DLY_ORD_APJ,0y0e8,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-18 16:09:40,2022-10-18 18:42:31,221018,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_DLY_ORD_APJ,0zk34,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-20 16:02:50,2022-10-20 18:45:51,221020,,GRC Reporting Tool,,
