@@ -14,7 +14,7 @@ EBIETLBSLS_AFFINITY_SP2_PRD,15m7w,EBIETLBSLS,Ended OK,                   0,     
 EBIETLBSLS_AFFINITY_SP2_PRD,1848d,EBIETLBSLS,Ended OK,                   0,                   0,                   0,2022-10-30 07:06:35,2022-10-30 07:07:40,221030,HOUSEHOLD ROLLUP,EBIETLBSLS,,
 EBIETLBSLS_AFFINITY_SP2_PRD,13xot,EBIETLBSLS,Ended OK,                   0,                   0,                   0,2022-10-25 09:10:14,2022-10-25 09:11:19,221025,HOUSEHOLD ROLLUP,EBIETLBSLS,,
 EBIETLBSLS_AFFINITY_SP2_PRD,14rn0,EBIETLBSLS,Ended OK,                   0,                   0,                   0,2022-10-26 08:57:46,2022-10-26 08:58:51,221026,HOUSEHOLD ROLLUP,EBIETLBSLS,,
-EBIETLBSLS_AFFINITY_SP2_PRD,19yhm,EBIETLBSLS,Wait Condition,                   0,                   0,                   0,,,221101,HOUSEHOLD ROLLUP,EBIETLBSLS,2022-11-01 07:31:30,2022-11-01 07:32:30
+EBIETLBSLS_AFFINITY_SP2_PRD,19yhm,EBIETLBSLS,Wait Condition,                   0,                   0,                   0,,,221101,HOUSEHOLD ROLLUP,EBIETLBSLS,2022-11-01 08:03:20,2022-11-01 08:04:20
 EBIETLBSLS_AFFINITY_USAFFINITYTML01,18yp8,EBIETLBSLS,Ended OK,                   0,                   0,                   0,2022-10-31 02:15:13,2022-10-31 02:16:19,221031,HOUSEHOLD ROLLUP,EBIETLBSLS,,
 EBIETLBSLS_AFFINITY_USAFFINITYTML01,16gep,EBIETLBSLS,Ended OK,                   0,                   0,                   0,2022-10-28 02:08:13,2022-10-28 02:09:19,221028,HOUSEHOLD ROLLUP,EBIETLBSLS,,
 EBIETLBSLS_AFFINITY_USAFFINITYTML01,17afc,EBIETLBSLS,Ended OK,                   0,                   0,                   0,2022-10-29 01:47:11,2022-10-29 01:48:18,221029,HOUSEHOLD ROLLUP,EBIETLBSLS,,
@@ -38,7 +38,7 @@ EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_AMER,15hn2,EBI_ETL_DLT,Ended OK,              
 EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_AMER,180ek,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-30 08:02:53,2022-10-30 08:50:22,221030,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_AMER,13twq,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-25 07:36:43,2022-10-25 07:36:43,221025,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_AMER,14nw4,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-26 05:54:48,2022-10-26 06:51:27,221026,,GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_AMER,19p1m,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,221101,,GRC Reporting Tool,2022-11-01 05:24:00,2022-11-01 06:24:50
+EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_AMER,19p1m,EBI_ETL_DLT,Executing,                   0,                   0,                   0,2022-11-01 05:15:11,,221101,,GRC Reporting Tool,2022-11-01 05:15:11,2022-11-01 06:16:00
 EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_EMEA,18ugm,EBI_ETL_DLT,Wait Resource,                   0,                   0,                   0,,,221031,,GRC Reporting Tool,2022-11-01 00:32:30,2022-11-01 01:25:40
 EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_EMEA,16clg,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,221028,,GRC Reporting Tool,2022-10-29 06:58:00,2022-10-29 07:51:10
 EBI_ETL_DLT_FDM_CUBE_AGGR_DLY_ORD_EMEA,176mc,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,,,221029,,GRC Reporting Tool,2022-10-30 00:09:40,2022-10-30 01:02:50
@@ -78,7 +78,7 @@ EBI_ETL_DLT_FDM_CUBE_DLY_ORD_AMER,15hks,EBI_ETL_DLT,Ended OK,                   
 EBI_ETL_DLT_FDM_SOAF_DELL_AMER,180d5,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-30 05:16:20,2022-10-30 05:23:34,221030,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_DLY_ORD_AMER,13tuh,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-25 07:36:43,2022-10-25 09:46:01,221025,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_DLY_ORD_AMER,14ntt,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-26 06:51:27,2022-10-26 09:05:34,221026,,GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_CUBE_DLY_ORD_AMER,19ozd,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,221101,,GRC Reporting Tool,2022-11-01 06:24:50,2022-11-01 08:21:00
+EBI_ETL_DLT_FDM_CUBE_DLY_ORD_AMER,19ozd,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,221101,,GRC Reporting Tool,2022-11-01 06:16:00,2022-11-01 08:12:10
 EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_APJ,18uev,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-31 16:34:32,2022-10-31 16:58:58,221031,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_AMER,16cj7,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-28 06:51:10,2022-10-28 07:33:51,221028,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_CUBE_DLY_QTE_INC_AMER,176ly,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-29 06:13:35,2022-10-29 06:43:06,221029,,GRC Reporting Tool,,
@@ -110,7 +110,7 @@ EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_AMER,15hkr,EBI_ETL_DLT,Ended OK,                 
 EBIETLPPARTY_SRA_DELL_ACCT_DIM_TD1,185dx,EBIETLPPARTY,Ended OK,                   0,                   0,                   0,2022-10-30 07:07:42,2022-10-30 07:23:25,221030,Load Data into DELL_ACCT_DIM Table,EBIETLPPARTY,,
 EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_AMER,13tug,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-25 06:44:06,2022-10-25 07:07:04,221025,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_AMER,14nts,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-26 05:56:27,2022-10-26 06:28:12,221026,,GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_AMER,19ozc,EBI_ETL_DLT,Wait Condition,                   0,                   0,                   0,,,221101,,GRC Reporting Tool,2022-11-01 05:26:50,2022-11-01 05:52:10
+EBI_ETL_DLT_FDM_GRC_EXTRC_DELL_AMER,19ozc,EBI_ETL_DLT,Executing,                   0,                   0,                   0,2022-11-01 05:17:28,,221101,,GRC Reporting Tool,2022-11-01 05:17:28,2022-11-01 05:42:50
 EBI_ETL_DLT_FDM_ORD_HASH_INC_DELL_EMEA,18uf5,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-31 21:23:28,2022-10-31 21:55:41,221031,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_ORD_HASH_FULL_EMC_MN,16civ,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-28 03:17:01,2022-10-28 03:28:01,221028,EMC Order Hash Dell(Async),GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_ORD_HASH_FULL_EMC_MN,176ji,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-29 04:00:19,2022-10-29 04:09:38,221029,EMC Order Hash Dell(Async),GRC Reporting Tool,,
@@ -198,7 +198,7 @@ EBI_ETL_DLT_FDM_SO_HDR_DELL_AMER,15hkq,EBI_ETL_DLT,Ended OK,                   0
 EBIETLPSLS_SRA_ORD_ACCT_MAP_EMEA_DLY_TD1,1831y,EBIETLPSLS,Ended OK,                   0,                   0,                   0,2022-10-30 19:47:35,2022-10-30 19:47:37,221030,Extract Data For ord acct map emeaTable,,,
 EBI_ETL_DLT_FDM_SO_HDR_DELL_AMER,13tuf,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-25 05:23:59,2022-10-25 05:59:28,221025,,GRC Reporting Tool,,
 EBI_ETL_DLT_FDM_SO_HDR_DELL_AMER,14ntr,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-26 05:22:04,2022-10-26 05:54:47,221026,,GRC Reporting Tool,,
-EBI_ETL_DLT_FDM_SO_HDR_DELL_AMER,19ozb,EBI_ETL_DLT,Executing,                   0,                   0,                   0,2022-11-01 04:45:03,,221101,,GRC Reporting Tool,2022-11-01 04:45:03,2022-11-01 05:24:00
+EBI_ETL_DLT_FDM_SO_HDR_DELL_AMER,19ozb,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-11-01 04:45:03,2022-11-01 05:15:11,221101,,GRC Reporting Tool,,
 EBIETLPPARTY_SRA_DELL_ACCT_DIM_TD1,1914n,EBIETLPPARTY,Ended OK,                   0,                   0,                   0,2022-10-31 05:17:59,2022-10-31 05:50:05,221031,Load Data into DELL_ACCT_DIM Table,EBIETLPPARTY,,
 EBI_ETL_DLT_FDM_SOIF_DELL_EMEA,16cjd,EBI_ETL_DLT,Executing,                   0,                   0,                   0,2022-10-28 23:19:58,,221028,,GRC Reporting Tool,2022-10-28 23:19:58,2022-10-29 00:03:40
 EBI_ETL_DLT_FDM_SPLT_CRDT_DELL_EMEA,176jv,EBI_ETL_DLT,Ended OK,                   0,                   0,                   0,2022-10-29 21:22:45,2022-10-29 21:22:50,221029,,GRC Reporting Tool,,
@@ -294,7 +294,7 @@ EBIETLPPARTY_BMS_ACCT_HIERARCY_PIVOT,15ncj,EBIETLPPARTY,Ended OK,               
 POS_SLS_INFA_TD_TD_GBLSLS_PKG_AMER_INC,17koc,POS_TD,Ended OK,                   0,                   0,                   0,2022-10-30 02:30:06,2022-10-30 02:42:38,221030,Loads To Legacy Amer Inc to GBL ORD Inc,Sales Order & Product - 1003512,,
 EBIETLPPARTY_BMS_ACCT_HIERARCY_PIVOT,13ytg,EBIETLPPARTY,Ended OK,                   0,                   0,                   0,2022-10-25 13:24:10,2022-10-25 13:30:24,221025,This is the materialized table PARTY_PKG.ACCT_HIERARCY_PIVOT from PARTY_EXTRC.ACCT_HIERARCY_PIVOT_VW,EBIETLPPARTY,,
 EBIETLPPARTY_BMS_ACCT_HIERARCY_PIVOT,14sro,EBIETLPPARTY,Ended OK,                   0,                   0,                   0,2022-10-26 13:22:20,2022-10-26 13:26:31,221026,This is the materialized table PARTY_PKG.ACCT_HIERARCY_PIVOT from PARTY_EXTRC.ACCT_HIERARCY_PIVOT_VW,EBIETLPPARTY,,
-EBIETLPPARTY_SRA_DELL_ACCT_DIM_TD1,19zlr,EBIETLPPARTY,Wait Condition,                   0,                   0,                   0,,,221101,Load Data into DELL_ACCT_DIM Table,EBIETLPPARTY,2022-11-01 07:32:30,2022-11-01 07:51:40
+EBIETLPPARTY_SRA_DELL_ACCT_DIM_TD1,19zlr,EBIETLPPARTY,Wait Condition,                   0,                   0,                   0,,,221101,Load Data into DELL_ACCT_DIM Table,EBIETLPPARTY,2022-11-01 08:04:20,2022-11-01 08:23:30
 EBIETLPSLS_SRA_ORD_MAILER_CD_ACCT_TD1,18xbi,EBIETLPSLS,Ended OK,                   0,                   0,                   0,2022-10-31 03:45:03,2022-10-31 03:48:24,221031,This will load data into ORD_MAILER_CD_ACCT table,EBIETLPSLS,,
 EBIETLPSLS_OAM_APJ,16f3r,EBIETLPSLS,Ended OK,                   0,                   0,                   0,2022-10-28 20:38:10,2022-10-28 20:41:22,221028,Extract Data For ord acct map apj Table,EBIETLPSLS,,
 EBIETLPSLS_SRA_ORD_ACCT_MAP_APJ_DLY_TD1,1798x,EBIETLPSLS,Ended OK,                   0,                   0,                   0,2022-10-29 11:53:28,2022-10-29 11:53:30,221029,Extract Data For ord acct map apj Table,,,
@@ -318,7 +318,7 @@ EBIETLPSLS_BMS_EMC_PARTNER_CREDIT_MD,15kw9,EBIETLPSLS,Ended OK,                 
 POS_SLS_INFA_TD_TD_GBLSLS_PKG_DRIVER_APJ,17kof,POS_TD,Ended OK,                   0,                   0,                   0,2022-10-30 09:58:42,2022-10-30 10:00:51,221030,GBL ODF Driver table load,Sales Order & Product - 1003512,,
 EBIETLPSLS_BMS_EMC_PARTNER_CREDIT_MD,13wdf,EBIETLPSLS,Ended OK,                   0,                   0,                   0,2022-10-25 13:00:01,2022-10-25 13:08:39,221025,2nd pull for EMC_PARTNER_CREDIT table from EMC in DDW,EBIETLPSLS,,
 EBIETLPSLS_BMS_EMC_PARTNER_CREDIT_MD,14qc6,EBIETLPSLS,Ended OK,                   0,                   0,                   0,2022-10-26 13:00:01,2022-10-26 13:06:34,221026,2nd pull for EMC_PARTNER_CREDIT table from EMC in DDW,EBIETLPSLS,,
-EBIETLPSLS_CUST_ACCT_MAP_TD1,19x4r,EBIETLPSLS,Wait Condition,                   0,                   0,                   0,,,221101,This will load data into CUST_ACCT_MAP table,EBIETLPSLS,2022-11-01 07:53:50,2022-11-01 08:00:10
+EBIETLPSLS_CUST_ACCT_MAP_TD1,19x4r,EBIETLPSLS,Wait Condition,                   0,                   0,                   0,,,221101,This will load data into CUST_ACCT_MAP table,EBIETLPSLS,2022-11-01 08:25:40,2022-11-01 08:32:00
 EBIETLPSLS_SRA_PW_PO_BAND_EMC_TD1,18xbj,EBIETLPSLS,Ended OK,                   0,                   0,                   0,2022-10-31 03:10:35,2022-10-31 03:13:46,221031,Extract Data for PO Band EMEA,EBIETLPSLS,,
 EBIETLPSLS_OAM_EMEA,16f6d,EBIETLPSLS,Ended OK,                   0,                   0,                   0,2022-10-28 22:49:30,2022-10-28 23:25:19,221028,Extract Data For ord acct map emeaTable,EBIETLPSLS,,
 EBIETLPSLS_SRA_PW_PO_BAND_AMER_TD1,1791f,EBIETLPSLS,Ended OK,                   0,                   0,                   0,2022-10-29 06:13:35,2022-10-29 06:26:01,221029,Extract Data for PO Band Amer,EBIETLPSLS,,
