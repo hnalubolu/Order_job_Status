@@ -51,7 +51,7 @@ td_data = pd.read_csv('ctm-logs.csv')
 rgn_data = pd.read_csv('regions.csv')
 file = open('refresh_time.csv')
 content = file.readlines()
-r_date = datetime.strptime(content[1][:-4], '%Y-%m-%d %H:%M:%S.%f').strftime("%d-%b-%Y %H:%M:%S") + ' CST'
+#r_date = datetime.strptime(content[1][:-4], '%Y-%m-%d %H:%M:%S.%f').strftime("%d-%b-%Y %H:%M:%S") + ' CST'
 
  
 logs_data1 = pd.merge(td_data, rgn_data, on='job_name', how ='left')
@@ -360,7 +360,7 @@ def main():
     
 
     st.sidebar.header('Data Refreshed at')
-    st.sidebar.subheader(r_date)
+    #st.sidebar.subheader(r_date)
 
 main()
 
